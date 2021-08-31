@@ -43,3 +43,11 @@ CREATE TABLE IF NOT EXISTS food_e.usuario_endereco(
     FOREIGN KEY(usuario) REFERENCES food_e.usuario(id),
     FOREIGN KEY(endereco) REFERENCES food_e.endereco(id)
 );
+CREATE TABLE IF NOT EXISTS food_e.usuario_metodo_pagamento(
+    id INT,
+    usuario INT NOT NULL,
+    metodo_pagamento INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(usuario) REFERENCES food_e.usuario(id),
+    FOREIGN KEY(metodo_pagamento) REFERENCES food_e.metodo_pagamento(id)
+);
