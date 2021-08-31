@@ -35,3 +35,11 @@ CREATE TABLE IF NOT EXISTS food_e.usuario(
     PRIMARY KEY(id),
     FOREIGN KEY(telefone) REFERENCES food_e.telefone(id)
 );
+CREATE TABLE IF NOT EXISTS food_e.usuario_endereco(
+    id INT,
+    usuario INT NOT NULL,
+    endereco INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(usuario) REFERENCES food_e.usuario(id),
+    FOREIGN KEY(endereco) REFERENCES food_e.endereco(id)
+);
