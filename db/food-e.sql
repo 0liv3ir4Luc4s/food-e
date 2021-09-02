@@ -69,3 +69,15 @@ CREATE TABLE IF NOT EXISTS food_e.produto(
     tempo_preparo TIME NOT NULL,
     PRIMARY KEY(id)
 );
+CREATE TABLE IF NOT EXISTS food_e.compra(
+    id INT,
+    usuario INT NOT NULL,
+    endereco INT NOT NULL,
+    metodo_pagamento INT NOT NULL,
+    data DATETIME NOT NULL,
+    valor_total DECIMAL(4, 2) NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(usuario) REFERENCES food_e.usuario(id),
+    FOREIGN KEY(endereco) REFERENCES food_e.endereco(id),
+    FOREIGN KEY(metodo_pagamento) REFERENCES food_e.metodo_pagamento(id)
+);
