@@ -61,3 +61,11 @@ CREATE TABLE IF NOT EXISTS food_e.empresa(
     FOREIGN KEY(endereco) REFERENCES food_e.endereco(id),
     FOREIGN KEY(telefone) REFERENCES food_e.telefone(id)
 );
+CREATE TABLE IF NOT EXISTS food_e.produto(
+    id INT,
+    nome VARCHAR(50) NOT NULL,
+    preco DECIMAL(4, 2) NOT NULL,
+    descricao VARCHAR(250) NOT NULL,
+    tempo_preparo TIME NOT NULL,
+    PRIMARY KEY(id)
+);
