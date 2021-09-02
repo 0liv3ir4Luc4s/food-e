@@ -81,3 +81,14 @@ CREATE TABLE IF NOT EXISTS food_e.compra(
     FOREIGN KEY(endereco) REFERENCES food_e.endereco(id),
     FOREIGN KEY(metodo_pagamento) REFERENCES food_e.metodo_pagamento(id)
 );
+CREATE TABLE IF NOT EXISTS food_e.compra_produto_empresa(
+    id INT,
+    compra INT NOT NULL,
+    produto INT NOT NULL,
+    empresa INT NOT NULL,
+    quantidade INT(4) NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(compra) REFERENCES food_e.compra(id),
+    FOREIGN KEY(produto) REFERENCES food_e.produto(id),
+    FOREIGN KEY(empresa) REFERENCES food_e.empresa(id)
+);
