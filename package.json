@@ -1,0 +1,14 @@
+{
+  "name": "food-e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:0liv3ir4Luc4s/food-e.git",
+  "author": "Lucas Oliveira <0liv3ir4.luc4s@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "picomatch": "^2.3.0"
+  }
+}
