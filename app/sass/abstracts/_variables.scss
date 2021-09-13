@@ -1,6 +1,6 @@
 $font-stack: (
-    primary: 'Poppins', sans-serif,
-    secondary: 'Bebas Neue', cursive
+    primary: ('Poppins', sans-serif),
+    secondary: ('Bebas Neue', cursive)
 );
 $colors: (
     primary: (
