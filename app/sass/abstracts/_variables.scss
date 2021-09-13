@@ -1,4 +1,27 @@
 $font-stack: (
     primary: 'Poppins', sans-serif,
     secondary: 'Bebas Neue', cursive
-)
+);
+$colors: (
+    primary: (
+        base: #2FDBBC,
+        light: #67e5ce,
+        dark: #1eae94
+    ),
+    secondary: (
+        base: #f99928,
+        light: #faac52,
+        dark: #df7b07
+    ),
+    semantic: (
+        success: #2fdb5f,
+        warning: #f1c75d,
+        error: #f77272
+    ),
+    neutral: (
+        white: #fff,
+        light: #f4f4f4,
+        gray: #a3a3a3,
+        dark: #2d2d2d,
+    )
+);
