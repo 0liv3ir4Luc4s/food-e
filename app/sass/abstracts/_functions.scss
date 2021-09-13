@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@function clr($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}
+@function font-family($family: primary) {
+  $font-family: map-get($font-stack, $family);
+  @return $font-family;
+}
