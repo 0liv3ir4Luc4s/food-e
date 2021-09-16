@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+.button {
+    padding: .6875rem 100% .6875rem;
+    border-radius: 1.25rem;
+}
+.button-default-full-solid  {
+    @extend .button;
+    background-color: clr(primary);
+}
