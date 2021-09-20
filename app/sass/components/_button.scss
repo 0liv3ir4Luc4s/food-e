@@ -12,3 +12,13 @@
         background-color: clr(primary, dark);
     }
 }
+.button-stroke {
+    @extend .button;
+    background: transparent;
+    box-shadow: 0 0 0 .125rem clr(primary) inset;
+    color: clr(primary);
+    &:active {
+        color: clr(primary, dark);
+        box-shadow: 0 0 0 .125rem clr(primary, dark) inset;
+    }
+}
