@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+.input {
+    background-color: clr(neutral, light);
+    border: none;
+    border-radius: 1.25rem;
+    padding: .59375rem 0 .59375rem 1.25rem ;
+}
+::placeholder {
+    color: clr(neutral, gray);
+    font-weight: 400;
+}
