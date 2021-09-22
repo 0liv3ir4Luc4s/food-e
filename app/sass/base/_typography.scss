@@ -6,6 +6,12 @@ body {
 .tag {
     font: 400 .75rem font-family(secondary);
 }
+
+label {
+    @extend .tag;
+    color: clr(primary);
+    margin: 0 100% .3125rem 2.5rem;
+}
 h1, h2, h3 {
     font-weight: 400;
     font-family: font-family(secondary);

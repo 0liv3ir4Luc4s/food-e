@@ -8,14 +8,18 @@
     @extend .button;
     background-color: clr(primary);
     color: clr(neutral, white);
+
     &:active {
         background-color: clr(primary, dark);
+        outline: .125rem solid black;
+        outline-offset: -.125rem;
     }
 }
 .button-stroke {
     @extend .button;
     background: transparent;
-    box-shadow: 0 0 0 .125rem clr(primary) inset;
+    //box-shadow: 0 0 0 .125rem clr(primary) inset;
+    
     color: clr(primary);
     &:active {
         color: clr(primary, dark);

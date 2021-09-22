@@ -4,6 +4,12 @@
     border: none;
     border-radius: 1.25rem;
     padding: .59375rem 0 .59375rem 1.25rem ;
+    margin: 0 0 1.875rem 1.25rem ;
+
+    &:focus {
+        outline: .125rem solid clr(primary);
+        outline-offset: -.125rem;
+    }
 }
 ::placeholder {
     color: clr(neutral, gray);
