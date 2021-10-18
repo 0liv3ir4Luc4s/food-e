@@ -1,5 +1,5 @@
 @use '../abstracts/' as *;
-.input {
+input {
     background-color: clr(neutral, light);
     border: none;
     border-radius: 1.25rem;
@@ -14,4 +14,27 @@
 ::placeholder {
     color: clr(neutral, gray);
     font-weight: 400;
+}
+.i-invalid, .i-valid{
+    visibility: hidden;
+}
+.valid {
+    input {
+        outline: .125rem solid clr(semantic, success);
+        outline-offset: -.125rem;
+    }
+
+    .i-valid {
+        visibility: visible;
+    }
+}
+.invalid {
+    input{
+        outline: .125rem solid clr(semantic, error);
+        outline-offset: -.125rem;
+    }
+
+    .i-invalid {
+        visibility: visible;
+    }
 }
