@@ -1,4 +1,30 @@
-let id = id => {return document.getElementById(id);};
+let id = id => {
+    let element = document.getElementById(id);
+    if(element) {
+        masks[id]();
+    }
+    return element;
+};
+function phoneMaskFunc(){
+    var phoneMask = new Cleave('#phone', {
+        blocks: [3, 14],
+    });
+}
+function zipMaskFunc(){
+    var zipMask = new Cleave('#zip', {
+        delimiter: '-',
+        blocks: [5, 3],
+        uppercase: true
+    });
+}
+function cardnumberMaskFunc(){
+    var cardnumberMask = new Cleave('#cardnumber', {
+        creditCard: true,
+    });
+}
+
+let masks = {"phone": phoneMaskFunc, "zip": zipMaskFunc, "cardnumber": cardnumberMaskFunc};
+
 let name = id("name");
 let email = id("email");
 let phone = id("phone");
@@ -9,6 +35,7 @@ let zip = id("zip");
 let city = id("city");
 let cardnumber = id("cardnumber");
 let cvv = id("cvv");
+
 let form = document.getElementById("form");
 
 form.onsubmit = e => {
@@ -31,7 +58,7 @@ form.onsubmit = e => {
 
         city != null && isCity(city.value) ? validInputs.push(city) : invalidInputs.push(city);
 
-        cardnumber != null && isCardNumber(cardnumber.value) ? validInputs.push(cardnumber) : invalidInputs.push(cardnumber);
+        cardnumber != null && isCardNumber(cardnumber.value.replace(/\s+/g, '')) ? validInputs.push(cardnumber) : invalidInputs.push(cardnumber);
 
         cvv != null && isCVV(cvv.value) ? validInputs.push(cvv) : invalidInputs.push(cvv);
 

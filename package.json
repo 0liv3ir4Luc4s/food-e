@@ -9,6 +9,7 @@
     "sass": "^1.39.0"
   },
   "dependencies": {
+    "cleave.js": "^1.6.0",
     "picomatch": "^2.3.0"
   }
 }
