@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+.validate {
+    margin: 0 0 1.875rem 1.25rem ;
+    width: fit-content;
+}
+input {
+    background-color: clr(neutral, light);
+    border: none;
+    border-radius: 1.25rem;
+    padding: .59375rem 0 .59375rem 1.25rem ;
+
+    &:focus {
+        outline: .125rem solid clr(primary);
+        outline-offset: -.125rem;
+    }
+}
+::placeholder {
+    color: clr(neutral, gray);
+    font-weight: 400;
+}
+.i-invalid, .i-valid{
+    visibility: hidden;
+}
+.valid {
+    input {
+        outline: .125rem solid clr(semantic, success);
+        outline-offset: -.125rem;
+    }
+
+    .i-valid {
+        visibility: visible;
+    }
+}
+.invalid {
+    input{
+        outline: .125rem solid clr(semantic, error);
+        outline-offset: -.125rem;
+    }
+
+    .i-invalid {
+        visibility: visible;
+    }
+}
