@@ -1,9 +1,14 @@
 let id = id => {
     let element = document.getElementById(id);
-    if(element) {
-        masks[id]();
+    try {
+        if(element) {
+            masks[id]();
+        }
+    } catch(ex) {
+        console.error("Erro ao buscar elemento no objeto masks");
+    } finally {
+        return element;
     }
-    return element;
 };
 function phoneMaskFunc(){
     var phoneMask = new Cleave('#phone', {
