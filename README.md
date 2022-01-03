@@ -1,7 +1,29 @@
-# food-e
+# Food-e
 
-In development ... some components are available for preview at: http://lucaso.ntectreinamentos.com.br/proj2/preview.html &rarr; Server down for maintenance
+# Sobre o projeto
 
-Alternative host: https://food-e-git-main-emailexterno4-gmailcom.vercel.app/preview.html
+### 🚧 Projeto em construção... 🚧
 
-Design from: https://www.figma.com/community/file/1001541266764237740/Food-e-UI-Kit
+https://food-e-seven.vercel.app/preview.html
+
+O "Food-E" é uma aplicação full-stack para delivery
+
+## Prévia - Componentes
+![Preview 1](https://github.com/0liv3ir4Luc4s/assets/blob/main/Food-E-Componentes.jpg?raw=true)
+
+## Features prontas
+- [x] Casos de Uso
+- [x] Modelagem do banco de dados (MER/DER)
+- [x] Banco de dados (SQL)
+- [x] Validação Front-End
+- [x] Botões
+- [x] Inputs
+
+# Tecnologias utilizadas
+## Front end
+- HTML / CSS (Sass) / JS
+- Bootstrap
+
+## Créditos
+
+Design por: https://www.figma.com/community/file/1001541266764237740/Food-e-UI-Kit
